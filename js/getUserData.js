@@ -1,19 +1,19 @@
-const getUserData = (url, params) => {
-  const API_URL = url,
-        user = params.user;
+import API from "./apiData.js";
 
-  fetch(`${API_URL}/users/${user}`, {
+const getUserData = (user) => {
+
+  fetch(`${API.url}/users/${user}`, {
     method: 'GET',
     headers: {
-      Authorization: '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',
+      Authorization: API.key,
       accept: 'application/vnd.github.v3+json',
     }
   })
     .then(response => response.json())
-    .then(repos => {
+    .then(user => {
 
-      console.table(repos)
-      document.querySelector("#profile").innerHTML = repos;
+      console.log(user)
+
     })
   };
 
