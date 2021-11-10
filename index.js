@@ -16,6 +16,8 @@ SEARCH_BUTTON.addEventListener('click', async () => {
   const COLOR = Math.floor(Math.random()*16777215).toString(16);
   const USER = USER_TEXT.value;
 
+  resetView('🔎<em> Searching user</em>')
+
   if (USER.length > 0){
     const USER_DATA = await getUserData(USER);
     
