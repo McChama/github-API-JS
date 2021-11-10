@@ -20,39 +20,23 @@
   <div class="container">
     <div class="header">
       <div class="profile">
-        <img src="./images/profile.jpg" alt="profile-image" srcset="">
+        <img src="./images/profile.png" alt="profile-image" srcset="" id="avatar">
         <p>Github repositories of</p>
-        <h1 id="username">McChama</h1>
+        <h1><a id="username"></a></h1>
       </div>
-      <div class="search">   
-        <input type="text" id="username" placeholder="Username">
-        <button type="button" id="search">
-          <span>Search user</span>
-        </button>
+      <div class="search">  
+        <form action="javascript:void(0);">
+          <input type="text" id="txtUsername" placeholder="Username">
+          <button type="submit" id="btnSearch">
+            <span>Search user</span>
+          </button>
+        </form> 
       </div>
     </div>
     <div class="content">
-      <div class="card">
-        <h3 class="card-title">Supervisor</h3>
-        <p class="card-content">Monitors activity to identify project roadblocks</p>
-      </div>
-      <div class="card">
-        <h3 class="card-title">Supervisor</h3>
-        <p class="card-content">Monitors activity to identify project roadblocks</p>
-      </div>
-      <div class="card">
-        <h3 class="card-title">Team Builder</h3>
-        <p class="card-content">Scans our talent network to create the optimal team for your project</p>
-      </div>
-      <div class="card">
-        <h3 class="card-title">Karma</h3>
-        <p class="card-content">Regularly evaluates our talent to ensure quality</p>
-      </div>
-      <div class="card">
-        <h3 class="card-title">Calculator</h3>
-        <p class="card-content">Uses data from past projects to provide better delivery estimates</p>
-      </div>
-      
+      <div class="flex-container">
+        <h2>Enter a github user to search their repos</h2>
+      </div>  
     </div>
   </div>
 
