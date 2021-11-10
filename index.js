@@ -7,6 +7,8 @@ const USER_TEXT = document.getElementById('txtUsername');
 
 const resetView = (message) => {
   document.querySelector('#avatar').src = "./images/profile.png";
+  document.querySelector('#username').innerText = "";
+  document.querySelector('#username').href = "";
   document.querySelector('.flex-container').innerHTML = `<h2>${message}</h2>`;
 }
 
