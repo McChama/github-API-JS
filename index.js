@@ -21,7 +21,7 @@ SEARCH_BUTTON.addEventListener('click', async () => {
     
     if (!(USER_DATA.message == "Not Found")){
       const REPOS = await getUserRepos(USER);
-      (REPOS) ? showResult(USER_DATA, REPOS) : resetView("We couldn't find any repositories associated to this account");
+      (REPOS.length > 0) ? showResult(USER_DATA, REPOS) : resetView("We couldn't find any repositories associated to this account");
       document.documentElement.style.setProperty('--main-color', `#${COLOR}`);
     } 
     else 
