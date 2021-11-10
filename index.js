@@ -6,7 +6,7 @@ const SEARCH_BUTTON = document.getElementById('btnSearch');
 const USER_TEXT = document.getElementById('txtUsername');
 
 const resetView = (message) => {
-  document.querySelector('#avatar').src = "/images/profile.png";
+  document.querySelector('#avatar').src = "./images/profile.png";
   document.querySelector('.flex-container').innerHTML = `<h2>${message}</h2>`;
 }
 
